@@ -30,7 +30,7 @@ function Park() {
   const API_BASE =
     process.env.NODE_ENV === "development"
       ? `http://localhost:3001/api/v1`
-      : process.env.REACT_APP_BASE_URL;
+      : process.env.EXPO_PUBLIC_API_BASE;
 
   useEffect(() => {
     getPark();
